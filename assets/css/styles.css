@@ -245,9 +245,10 @@ p.tagline {
 }
 
 .separator p {
-  color: #fff;
+  color: rgba(255,255,255,0.5);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: lighter;
+  letter-spacing: .4em;
   text-transform: uppercase;
   width: 70%;
   margin-bottom: 0;
@@ -1118,6 +1119,11 @@ a.comment-reply-link {
   width: 230px;
   height: 190px;
   display: flex;
+}
+
+#bioPic {
+  background-image: url("../images/Brian.jpg");
+  background-size: cover;
 }
 
 .contact-info i {

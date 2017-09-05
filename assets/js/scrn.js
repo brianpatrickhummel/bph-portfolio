@@ -36,7 +36,10 @@ $(document).ready(function(){
 
   $('a.youtube').vanillabox({
     type: 'iframe',
-    grouping:false
+    grouping:false,
+    preferredWidth: 1500,
+    preferredHeight: 1400
+
   });
 
   $('a.website').vanillabox({
