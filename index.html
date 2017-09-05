@@ -98,7 +98,8 @@
 
     <header>
       <h2>WEB DEVELOPMENT</h2>
-      <p>Below are several of the applications that I built from scratch while attending the UT Coding Bootcamp. Click on any project to preview the application</p>
+      <p>The applications below were built from scratch while attending the UT Coding Bootcamp. The selected projects depict my progress in programming comprehension and ability, graduating from building simple front-end apps with vanilla html/css/js to full-stack apps with a Node.js Express server, Mongo Database and React UI</p>
+      <h6>Click on a project to preview the application.</h6>
     </header>
 
     
@@ -124,7 +125,7 @@
       <li class="filter" data-filter="all">all</li>
       <li class="filter" data-filter=".category-1">Node CLI</li>
       <li class="filter" data-filter=".category-2">Web</li>
-      <li class="filter" data-filter=".category-3">video</li>
+      <!-- <li class="filter" data-filter=".category-3">video</li> -->
     </ul>
 
     <div id="work-container" class="work-gallery">
@@ -136,58 +137,60 @@
               <img src="assets/images/work-thumb-7.jpg" class="work-thumb img-responsive" alt="" />
               <div class="overlay">
                 <div class="overlay-content">
-                  <h3>Hangman</h3>
-                  <p>My FIRST application! A simple version of the classic Hangman game. Built with Javascript and jQuery.</p>
+                  <h3 class="overlayText">Hangman</h3>
+                  <p class="overlayText">My FIRST application! A simple version of the classic Hangman game. Built with Javascript and jQuery.</p>
                 </div> <!-- /.overlay-content -->
               </div> <!-- /.overlay-->
             </a>
           </div> <!-- end col-md-4 -->
 
+           <!-- TRIVIA GAME -->
+        <div class="col-md-4 col-sm-6 mix category-2">
+            <a href="https://www.youtube.com/embed/xTrhGCH9TOk" class="website">
+              <img src="assets/images/work-thumb-6.jpg" class="work-thumb img-responsive" alt="" />
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h3 class="overlayText">Trivia Game</h3>
+                  <p class="overlayText">My SECOND application! A responsive Javascript application that focuses on the use of Javascript Timing Events.</p>
+                </div> <!-- /.overlay-content -->
+              </div> <!-- /.overlay-->
+            </a>
+          </div> <!-- end col-md-4 -->
+          
           <!-- LIRI -->
         <div class="col-md-4 col-sm-6 mix category-1">
           <a href="https://www.youtube.com/embed/Pnt1aZmquOQ" class="youtube">
-            <img src="assets/images/intro-bg.jpg" class="work-thumb img-responsive" alt="" />
+            <img src="assets/images/work-thumb-1.jpg" class="work-thumb img-responsive" alt="" />
             <div class="overlay">
               <div class="overlay-content">
-                <h3>LIRI</h3>
-                <p>This Language Interpretation and Recognition Interface is a Node.js CLI application that allows a user to query the Twitter, Spotify and OMDB API's.</p>
-              </div> <!-- /.overlay-content -->
-            </div> <!-- /.overlay-->
-          </a>
-        </div> <!-- end col-md-4 -->
-          <!-- TRAIN SCHEDULER -->
-        <div class="col-md-4 col-sm-6 mix category-2">
-          <a href="https://brianpatrickhummel.github.io/trainscheduler/" class="website">
-            <img src="assets/images/slide-1.jpg" class="work-thumb img-responsive" alt="" />
-            <div class="overlay">
-              <div class="overlay-content">
-                <h3>Train Scheduler</h3>
-                <p>A responsive Javascript application that monitors train schedules and calculates real-time train arrival data using the Moment.js library. Incorporates Firebase Authentication and Database services.</p>
+                <h3 class="overlayText">LIRI</h3>
+                <p class="overlayText">This Language Interpretation and Recognition Interface is a Node.js CLI application that allows a user to query the Twitter, Spotify and OMDB API's.</p>
               </div> <!-- /.overlay-content -->
             </div> <!-- /.overlay-->
           </a>
         </div> <!-- end col-md-4 -->
 
-        <div class="col-md-4 col-sm-6 mix category-3">
-          <a href="https://www.youtube.com/embed/xTrhGCH9TOk" class="website">
-            <img src="assets/images/work-thumb-6.jpg" class="work-thumb img-responsive" alt="" />
+          <!-- TRAIN SCHEDULER -->
+        <div class="col-md-4 col-sm-6 mix category-2">
+          <a href="https://brianpatrickhummel.github.io/trainscheduler/" class="website">
+            <img src="assets/images/work-thumb-8.jpg" class="work-thumb img-responsive" alt="" />
             <div class="overlay">
               <div class="overlay-content">
-                <h3>Trivia Game</h3>
-                <p>My SECOND application! A responsive Javascript application that focuses on the use of Javascript Timing Events.</p>
+                <h3 class="overlayText">Train Scheduler</h3>
+                <p class="overlayText">A responsive Javascript application that monitors train schedules and calculates real-time train arrival data using the Moment.js library. Incorporates Firebase Authentication and Database services.</p>
               </div> <!-- /.overlay-content -->
             </div> <!-- /.overlay-->
           </a>
         </div> <!-- end col-md-4 -->
-        
+         
           <!-- FRIEND FINDER -->
         <div class="col-md-4 col-sm-6 mix category-2">
           <a href="https://friend-finder-heroku.herokuapp.com/" class="website">
             <img src="assets/images/work-thumb-4.jpg" class="work-thumb img-responsive" alt="" />
             <div class="overlay">
               <div class="overlay-content">
-                <h3>Friend Finder</h3>
-                <p>Responsive, full-stack JS/Node.js app that matches compatible friends by evaluating the responses to a personality survey.</p>
+                <h3 class="overlayText">Friend Finder</h3>
+                <p class="overlayText">Responsive, full-stack JS/Node.js app that matches compatible friends by evaluating the responses to a personality survey.</p>
               </div> <!-- /.overlay-content -->
             </div> <!-- /.overlay-->
           </a>
@@ -198,8 +201,8 @@
             <img src="assets/images/work-thumb-3.jpg" class="work-thumb img-responsive" alt="" />
             <div class="overlay">
               <div class="overlay-content">
-                <h3>Bamazon</h3>
-                <p>An Amazon.com-like Node.js CLI app built with the Inquirer NPM Library.  Store inventory data is maintained within a MySQL database.</p>
+                <h3 class="overlayText">Bamazon</h3>
+                <p class="overlayText">An Amazon.com-like Node.js CLI app built with the Inquirer NPM Library.  Store inventory data is maintained within a MySQL database.</p>
               </div> <!-- /.overlay-content -->
             </div> <!-- /.overlay-->
           </a>
@@ -212,33 +215,23 @@
 </section> <!-- end work -->
 
 
-<section class="call-to-action" data-sr>
+<!-- <section class="call-to-action" data-sr>
   <div class="container">
     <div class="row">
 
       <div class="col-md-9">
         <h3>Thanks for stopping by</h3>
         <p></p>
-      </div> <!-- /.col-md-9 -->
+      </div>  
 
       <div class="col-md-3">
         <a href="#contact" class="btn btn-default">Say hello</a>
-      </div> <!-- /.col-md-3 -->
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</section>
+      </div>  
+    </div>  
+</section> -->
 
 
-
-<section class="separator" data-parallax="scroll" data-image-src="assets/images/intro-bg.jpg">
-  <p>The last time I felt it was in the presence of my old master</p>
-</section>
-
-
-
-
-
-<section class="pricing-tables">
+<!-- <section class="pricing-tables">
   <div class="container">
 
     <header>
@@ -261,7 +254,7 @@
           </ul>
           <a href="#" class="btn btn-default">Sign up</a>
         </div>
-      </div> <!-- end col-sm-4 -->
+      </div> 
 
       <div class="col-sm-4">
         <div class="pricing-table pt-2">
@@ -276,7 +269,7 @@
           </ul>
           <a href="#" class="btn btn-default">Sign up</a>
         </div>
-      </div> <!-- end col-sm-4 -->
+      </div>
 
       <div class="col-sm-4">
         <div class="pricing-table pt-3">
@@ -291,33 +284,33 @@
           </ul>
           <a href="#" class="btn btn-default btn-white">Sign up</a>
         </div>
-      </div> <!-- end col-sm-4 -->
+      </div>
 
-    </div> <!-- end row -->
-  </div> <!-- end container -->
-</section> <!-- end pricing-tables -->
+    </div>
+  </div>
+</section>  -->
 
 
-<section class="call-to-action" data-sr>
+<!-- <section class="call-to-action" data-sr>
   <div class="container">
     <div class="row">
 
       <div class="col-md-9">
         <h3>You don't believe in the force, do you?</h3>
         <p>He is here. A tremor in the Force. The last time I felt it was in the presence of my old master. I’m surprised you had the courage to take the responsibility yourself.</p>
-      </div> <!-- /.col-md-9 -->
+      </div>
 
       <div class="col-md-3">
         <a href="#contact" class="btn btn-default">Say hello</a>
-      </div> <!-- /.col-md-3 -->
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
-</section>
+      </div> 
+    </div> 
+  </div> 
+</section> -->
 
 
 
 <section class="separator" data-parallax="scroll" data-image-src="assets/images/intro-bg.jpg">
-  <p>The last time I felt it was in the presence of my old master</p>
+  
 </section>
 
 
@@ -425,7 +418,7 @@
     </section> <!-- end team -->
 
   </div> <!-- end container -->
-</section> <!-- end about -->
+</section> 
 
 
 <section class="call-to-action" data-sr>
