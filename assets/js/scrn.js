@@ -44,7 +44,9 @@ $(document).ready(function(){
 
   $('a.website').vanillabox({
     type: 'iframe',
-    grouping:false
+    grouping:false,
+    preferredWidth: 1100,
+    preferredHeight: 1100
   });
 
 
