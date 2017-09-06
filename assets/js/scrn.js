@@ -37,8 +37,8 @@ $(document).ready(function(){
   $('a.youtube').vanillabox({
     type: 'iframe',
     grouping:false,
-    preferredWidth: 1500,
-    preferredHeight: 1400
+    preferredWidth: 1400,
+    preferredHeight: 1300
 
   });
 
