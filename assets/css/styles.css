@@ -1316,7 +1316,7 @@ In-Line Anchor Styes
 https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
 ******************************/
 
-section#about {
+.link-braces {
   position: relative;
   z-index: 1;
   /* needed for setting pseudo-element z-index */
@@ -1325,7 +1325,7 @@ section#about {
   backface-visibility: hidden;
 }
 
-section#about a {
+.link-braces a {
   position: relative;
   display: inline-block;
   outline: none;
@@ -1335,12 +1335,12 @@ section#about a {
   white-space: nowrap;
 }
 
-section#about a:hover {
+.link-braces a:hover {
   text-decoration: none;
 }
 
-section#about a::before,
-section#about a::after {
+.link-braces a::before,
+.link-braces a::after {
   pointer-events: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1374,7 +1374,7 @@ section#about a::after {
 
 .link-braces a::before {
   left: .05em;
-  top: -0.1em;
+  top: -0.05em;
   content: "[";
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -1382,7 +1382,7 @@ section#about a::after {
 
 .link-braces a::after {
   right: -0.05em;
-  top: -0.1em;
+  top: -0.05em;
   content: "]";
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
