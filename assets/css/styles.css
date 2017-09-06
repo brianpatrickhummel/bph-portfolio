@@ -1300,11 +1300,11 @@ p.copyright {
   letter-spacing: .05em;
 }
 
-/* section#work p:first-child,
+section#work p:first-of-type,
 section#about p {
   text-align: justify;
   text-align-last: left;
-} */
+}
 
 .clickMessage {
   margin-top: 30px;
