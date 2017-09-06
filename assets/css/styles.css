@@ -769,7 +769,7 @@ p.pt-per {
 }
 
 #about header {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .about-intro {
@@ -1270,6 +1270,14 @@ p.copyright {
   letter-spacing: .05em;
 }
 
+section#work p, section#about p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+.clickMessage {
+  margin-top: 30px;
+}
 /******************************
 In-Line Anchor Styes
 https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
@@ -1453,6 +1461,10 @@ section a:focus {
   .intro-1 h1 {
     font-size: 50px;
   }
+  #contact header {
+    margin-bottom: 38px;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1549,6 +1561,20 @@ section a:focus {
   section header p {
     font-size: 16px;
   }
+
+  h2 {
+    font-size: 50px;
+    letter-spacing: 0;
+  }
+
+  #about header {
+    margin-bottom: 60px;
+  }
+
+  #contact header {
+    margin-bottom: 35px;
+  }
+
 }
 
 @media only screen and (max-width: 582px) {
@@ -1582,6 +1608,18 @@ section a:focus {
     padding: 13px;
     font-size: 0.9em;
   }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  #about header {
+    margin-bottom: 40px;
+  }
+
+  #contact header {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -1591,6 +1629,10 @@ section a:focus {
 
   .page-404-content p {
     font-size: 30px;
+  }
+
+  h2 {
+    font-size: 35px;
   }
 }
 
@@ -1619,11 +1661,6 @@ section a:focus {
     margin-bottom: 30px;
   }
 
-  h2 {
-    font-size: 50px;
-    letter-spacing: 0;
-  }
-
   .parallax p {
     font-size: 30px;
   }
@@ -1645,6 +1682,14 @@ section a:focus {
 
   .intro-1 p {
     font-size: 14px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #contact header {
+    margin-bottom: 20px;
   }
 }
 
@@ -1670,5 +1715,9 @@ section a:focus {
 
   section header p {
     font-size: 11px;
+  }
+
+  h2 {
+    font-size: 24px;
   }
 }
