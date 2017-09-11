@@ -18,8 +18,8 @@ function submitForm(){
     var URL = 'https://yovbu7k9a8.execute-api.us-east-1.amazonaws.com/FormEmailStage/contact'
     var data = {
         name: $("#name").val(),
-        email = $("#email").val(),
-        message = $("#message").val()
+        email: $("#email").val(),
+        message: $("#message").val()
     }
 
     // var URI = encodeURIComponent("assets/contact-form/php/form-process.php");
