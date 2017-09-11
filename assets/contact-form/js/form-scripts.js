@@ -36,7 +36,7 @@ function submitForm(){
         contentType: 'application/json',
         data: JSON.stringify(data),
         success : function(response){
-            if (response == 200){
+            if (response == "success"){
                 formSuccess();
             } else {
                 formError();
@@ -57,8 +57,8 @@ function formError(){
     });
 }
 
-function submitMSG(valid, msg){
-    if(valid){
+function submitMSG(true, msg){
+    if(true){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
         var msgClasses = "h3 text-center text-danger";
