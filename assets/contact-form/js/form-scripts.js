@@ -16,10 +16,11 @@ function submitForm(){
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
+    var URI = encodeURIComponent("assets/contact-form/php/form-process.php");
 
     $.ajax({
         type: "POST",
-        url: "assets/contact-form/php/form-process.php",
+        url: URI,
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){
