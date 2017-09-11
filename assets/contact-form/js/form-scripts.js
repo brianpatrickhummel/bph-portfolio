@@ -15,11 +15,16 @@ function submitForm(){
     // Initiate Variables With Form Content
 
     // This is the Invoke URL for Amazon API Gateway which has a SES-linked Lambda configured to send the email form
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+
+
     var URL = 'https://yovbu7k9a8.execute-api.us-east-1.amazonaws.com/FormEmailStage/contact'
     var data = {
-        name: $("#name").val(),
-        email: $("#email").val(),
-        message: $("#message").val()
+        name: name,
+        email: email,
+        message: message
     }
 
     // var URI = encodeURIComponent("assets/contact-form/php/form-process.php");
@@ -30,12 +35,12 @@ function submitForm(){
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(data),
-        success : function(text){
-            if (text == "success"){
+        success : function(response){
+            if (response == 200){
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false,response);
             }
         }
     });
