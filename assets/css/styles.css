@@ -32,6 +32,23 @@
  01. Typography
 ******************************/
 
+@font-face {
+  font-family: "Sabado";
+  src: url("../fonts/SabadoRegular.otf");
+}
+
+@font-face {
+  font-family: "MavenPro";
+  src: url("../fonts/MavenPro.otf");
+}
+
+section#work h6 {
+  font-family: "Sabado";
+  letter-spacing: 0.4em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 body,
 p,
 a,
@@ -118,10 +135,14 @@ section header h2::after {
 
 section header p {
   color: #505050;
-  font-size: 18px;
-  width: 70%;
+  font-size: 22px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "MavenPro";
+  letter-spacing: 0.05em;
 }
 
 section#work,
@@ -573,15 +594,16 @@ li.filter.on {
 .overlayText {
   color: rgba(255, 255, 255, 0.9);
   font-weight: lighter;
-  letter-spacing: 0.1em;
+  text-transform: uppercase;
   margin: 10px;
 }
 
 .overlay-content h3 {
   font-size: 26px;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-transform: none;
   margin-bottom: 14px;
+  text-transform: uppercase;
 }
 
 .overlay-content p {
@@ -1278,8 +1300,9 @@ section#about p {
 }
 
 .clickMessage {
-  margin-top: 30px;
-  letter-spacing: .1em;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
 }
 
 .nav > li > a:focus,
@@ -1309,6 +1332,7 @@ Float Shadow on the Nav Bar Links
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-float-shadow:before {
   pointer-events: none;
   position: absolute;
@@ -1336,6 +1360,7 @@ Float Shadow on the Nav Bar Links
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
+
 .hvr-float-shadow:hover,
 .hvr-float-shadow:focus,
 .hvr-float-shadow:active {
@@ -1343,6 +1368,7 @@ Float Shadow on the Nav Bar Links
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
+
 .hvr-float-shadow:hover:before,
 .hvr-float-shadow:focus:before,
 .hvr-float-shadow:active:before {
@@ -1467,6 +1493,7 @@ footer a:focus {
 }
 
 /* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+
 .cl-effect-2 a {
   line-height: 22px;
   -webkit-perspective: 1000px;
@@ -1557,9 +1584,6 @@ footer a:focus {
 }
 
 @media only screen and (max-width: 992px) {
-  section header p {
-    width: 100%;
-  }
   .separator {
     height: 60vh;
   }
@@ -1603,6 +1627,10 @@ footer a:focus {
   }
   #contact header {
     margin-bottom: 38px;
+  }
+  h2 {
+    font-size: 52px;
+    letter-spacing: 0.2em;
   }
 }
 
@@ -1677,17 +1705,30 @@ footer a:focus {
     font-size: 0.9em;
   }
   section header p {
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0.04em;
   }
   h2 {
-    font-size: 50px;
-    letter-spacing: 0;
+    font-size: 46px;
+    letter-spacing: 0.1em;
   }
   #about header {
     margin-bottom: 60px;
   }
   #contact header {
     margin-bottom: 35px;
+  }
+  section#work h6 {
+    letter-spacing: 0.35em;
+    font-size: 14px;
+  }
+
+  section#work,
+  section#services,
+  section#about,
+  section#blog,
+  section#contact {
+    padding: 100px 0 105px 0;
   }
 }
 
@@ -1717,13 +1758,23 @@ footer a:focus {
     font-size: 0.9em;
   }
   h2 {
-    font-size: 45px;
+    font-size: 42px;
+    letter-spacing: 0.05em;
   }
   #about header {
     margin-bottom: 40px;
   }
   #contact header {
     margin-bottom: 30px;
+  }
+  section#work h6 {
+    letter-spacing: 0.3em;
+    font-size: 12px;
+  }
+
+  section header p {
+    font-size: 18px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1736,6 +1787,20 @@ footer a:focus {
   }
   h2 {
     font-size: 35px;
+  }
+  .separator {
+    height: 45vh;
+  }
+  section#work,
+  section#about,
+  section#contact {
+    padding: 70px 0 80px 0;
+  }
+  #intro {
+    height: 73vh;
+  }
+  .separator p {
+    font-size: 24px;
   }
 }
 
@@ -1774,6 +1839,7 @@ footer a:focus {
   }
   section header p {
     font-size: 14px;
+    letter-spacing: 0.1em;
   }
   .intro-1 p {
     font-size: 14px;
@@ -1783,6 +1849,36 @@ footer a:focus {
   }
   #contact header {
     margin-bottom: 20px;
+  }
+  section#work {
+    padding: 65px 0 65px 0;
+  }
+  li.filter {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+  }
+  section header h2::after {
+    margin: 10px auto;
+  }
+  .filter-list {
+    margin: 40px 0 30px 0;
+  }
+  .clickMessage {
+    margin-top: 25px;
+  }
+  ul {
+    margin-bottom: 0px;
+  }
+  .about-intro img {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#work h6 {
+    letter-spacing: 0.2em;
+    font-size: 10px;
   }
 }
 
@@ -1807,5 +1903,25 @@ footer a:focus {
   }
   h2 {
     font-size: 24px;
+  }
+  .separator {
+    height: 45vh;
+  }
+  section#work,
+  section#about,
+  section#contact {
+    padding: 30px 0 30px 0;
+  }
+  section#about header {
+    margin-bottom: 15px;
+  }
+  .separator p {
+    font-size: 16px;
+  }
+  #contact form {
+    margin-top: 15px;
+  }
+  #contact .form-group {
+    margin-bottom: 15px;
   }
 }

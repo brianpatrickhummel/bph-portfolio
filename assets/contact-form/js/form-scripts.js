@@ -11,7 +11,7 @@ $("#contactForm").validator().on("submit", function (event) {
 });
 
 
-function submitForm(){
+function submitForm() {
     // Initiate Variables With Form Content
 
     // This is the Invoke URL for Amazon API Gateway which has a SES-linked Lambda configured to send the email form
@@ -35,30 +35,30 @@ function submitForm(){
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(data),
-        success : function(response){
-            if (response == "success"){
+        success: function (response) {
+            if (response == "success") {
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,response);
+                submitMSG(false, response);
             }
         }
     });
 }
 
-function formSuccess(){
+function formSuccess() {
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
 }
 
-function formError(){
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
 
-function submitMSG(true, msg){
-    if(true){
+function submitMSG(boolean, msg) {
+    if (true) {
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
         var msgClasses = "h3 text-center text-danger";
