@@ -320,10 +320,13 @@ div.parallax-mirror {
 }
 
 .intro-1 p {
-  font-size: 24px;
+  font-size: 20px;
   margin: 20px 0;
   padding: 0 80px;
   letter-spacing: 0.2em;
+  text-indent: 0.15em;
+  font-family: "MavenPro";
+  text-transform: uppercase;
 }
 
 ul.social-intro {
@@ -798,7 +801,7 @@ p.pt-per {
 }
 
 .about-intro p {
-  color: #777;
+  color: rgba(1,1,1,1);
   margin-bottom: 25px;
 }
 
@@ -1199,6 +1202,13 @@ p.copyright {
   margin: 50px 0;
 }
 
+section#about p {
+  font-family: "MavenPro";
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 /******************************
  13. 404 page
 ******************************/
@@ -1439,16 +1449,16 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
 }
 
 .link-braces a::before {
-  left: 0.05em;
-  top: -0.05em;
+  left: 0em;
+  top: -0.1em;
   content: "[";
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
 .link-braces a::after {
-  right: -0.05em;
-  top: -0.05em;
+  right: -0.16em;
+  top: -0.1em;
   content: "]";
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -1572,6 +1582,11 @@ footer a:focus {
   .intro-1 h1 {
     font-size: 65px;
   }
+  
+  section#about p {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media only screen and (max-width: 1075px) {
@@ -1632,6 +1647,11 @@ footer a:focus {
     font-size: 52px;
     letter-spacing: 0.2em;
   }
+
+  section#about p {
+    font-size: 17px;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1649,7 +1669,7 @@ footer a:focus {
     font-size: 100px;
   }
   .intro-1 p {
-    font-size: 20px;
+    font-size: 19px;
   }
   .intro-1 p {
     padding: 0;
@@ -1729,6 +1749,11 @@ footer a:focus {
   section#blog,
   section#contact {
     padding: 100px 0 105px 0;
+  }
+
+  section#about p {
+    font-size: 15px;
+    letter-spacing: 0.06em;
   }
 }
 
