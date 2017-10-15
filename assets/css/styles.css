@@ -599,6 +599,7 @@ li.filter.on {
   font-weight: lighter;
   text-transform: uppercase;
   margin: 10px;
+  letter-spacing: .057em;
 }
 
 .overlay-content h3 {
