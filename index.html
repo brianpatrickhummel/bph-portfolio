@@ -25,18 +25,24 @@
   <script src="assets/vendor/modernizr.custom.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108140954-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108140954-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-108140954-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108140954-1');
+  </script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-108140954-1');
@@ -51,11 +57,31 @@
         <h1>BRIAN PATRICK HUMMEL</h1>
         <p>full-stack web developer</p>
         <ul class="social-intro list-unstyled list-inline">
-          <li><a href="https://stackoverflow.com/users/7560339/brian-patrick-hummel?tab=profile" target="_blank" class="icn-github"><i class="fa fa-inverse fa-stack-overflow"></i></a></li>
-          <li><a href="https://github.com/brianpatrickhummel" target="_blank" class="icn-github"><i class="fa fa-github-alt"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/brianpatrickhummel/" target="_blank" class="icn-github"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/bribribribribrian/?hl=en" target="_blank" class="icn-github"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://earthtonesaudio.bandcamp.com/" target="_blank" class="icn-github"><i class="fa fa-microphone"></i></a></li>
+          <li>
+            <a href="https://stackoverflow.com/users/7560339/brian-patrick-hummel?tab=profile" target="_blank" class="icn-github">
+              <i class="fa fa-inverse fa-stack-overflow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/brianpatrickhummel" target="_blank" class="icn-github">
+              <i class="fa fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/brianpatrickhummel/" target="_blank" class="icn-github">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/bribribribribrian/?hl=en" target="_blank" class="icn-github">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://earthtonesaudio.bandcamp.com/" target="_blank" class="icn-github">
+              <i class="fa fa-microphone"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -66,19 +92,27 @@
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
               aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a class="hvr-float-shadow" href="index.html#intro">Home</a></li>
-              <li><a class="hvr-float-shadow" href="index.html#work">Work</a></li>
-              <li><a class="hvr-float-shadow" href="index.html#about">About</a></li>
+              <li>
+                <a class="hvr-float-shadow" href="index.html#intro">Home</a>
+              </li>
+              <li>
+                <a class="hvr-float-shadow" href="index.html#work">Work</a>
+              </li>
+              <li>
+                <a class="hvr-float-shadow" href="index.html#about">About</a>
+              </li>
               <!-- <li><a href="index.html#blog">Blog</a></li> -->
-              <li><a class="hvr-float-shadow" href="index.html#contact">Contact</a></li>
+              <li>
+                <a class="hvr-float-shadow" href="index.html#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -128,8 +162,8 @@
                   <div class="overlay-content">
                     <h3 class="overlayText">Hangman</h3>
                     <p class="overlayText">My FIRST application! A simple version of the classic Hangman game. Built with Javascript and jQuery.</p>
-                  </div>  
-                </div> 
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -140,9 +174,10 @@
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">Trivia Game</h3>
-                    <p class="overlayText">My SECOND application! A responsive Javascript application that focuses on the use of Javascript Timing Events.</p>
-                  </div> 
-                </div>  
+                    <p class="overlayText">My SECOND application! A responsive Javascript application that focuses on the use of Javascript Timing
+                      Events.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -153,9 +188,10 @@
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">Train Scheduler</h3>
-                    <p class="overlayText">A RESPONSIVE JAVASCRIPT APPLICATION THAT MONITORS TRAIN SCHEDULES AND CALCULATES REAL-TIME TRAIN ARRIVAL DATA USING THE MOMENT.JS LIBRARY. INCORPORATES FIREBASE AUTHENTICATION AND DATABASE SERVICES.</p>
-                  </div>  
-                </div>  
+                    <p class="overlayText">A RESPONSIVE JAVASCRIPT APPLICATION THAT MONITORS TRAIN SCHEDULES AND CALCULATES REAL-TIME TRAIN ARRIVAL
+                      DATA USING THE MOMENT.JS LIBRARY. INCORPORATES FIREBASE AUTHENTICATION AND DATABASE SERVICES.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -166,9 +202,10 @@
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">LIRI</h3>
-                    <p class="overlayText">This Language Interpretation and Recognition Interface is a Node.js CLI application that allows a user to query the Twitter, Spotify and OMDB API's.</p>
-                  </div> 
-                </div>  
+                    <p class="overlayText">This Language Interpretation and Recognition Interface is a Node.js CLI application that allows a user
+                      to query the Twitter, Spotify and OMDB API's.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -179,9 +216,11 @@
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">Flashcard Generator</h3>
-                    <p class="overlayText">This Node.js CLI application allows a user to generate two different types of flashcard decks for the purposing of studying. Each new card added to a deck is created using a Javascript Constructor. The user can then practice with either type of deck.</p>
-                  </div> 
-                </div>  
+                    <p class="overlayText">This Node.js CLI application allows a user to generate two different types of flashcard decks for the
+                      purposing of studying. Each new card added to a deck is created using a Javascript Constructor. The
+                      user can then practice with either type of deck.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -192,9 +231,10 @@
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">Bamazon</h3>
-                    <p class="overlayText">An Amazon.com-like Node.js CLI app built with the Inquirer NPM Library.  Store inventory data is maintained within a MySQL database.</p>
-                  </div>  
-                </div>  
+                    <p class="overlayText">An Amazon.com-like Node.js CLI app built with the Inquirer NPM Library. Store inventory data is maintained
+                      within a MySQL database.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -205,9 +245,10 @@
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">Friend Finder</h3>
-                    <p class="overlayText">A Responsive, full-stack app that matches compatible friends by evaluating responses from a personality survey. Back-end is built on Node.js and the Express Framework, using Handlebars.js as a view engine.</p>
-                  </div>  
-                </div>  
+                    <p class="overlayText">A Responsive, full-stack app that matches compatible friends by evaluating responses from a personality
+                      survey. Back-end is built on Node.js and the Express Framework, using Handlebars.js as a view engine.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -219,9 +260,11 @@
                   <div class="overlay-content">
                     <h3 class="overlayText">Burger</h3>
                     <h6 class="overlayText">MySQL Edition</h6>
-                    <p class="overlayText">A responsive, full-stack app that allows users to track which hamburgers around town they have eaten. This MVC-designed app is built on Node.js with Express Routing, a MySQL database, a homemade ORM and the Handlebars.js view engine. </p>
-                  </div> 
-                </div>  
+                    <p class="overlayText">A responsive, full-stack app that allows users to track which hamburgers around town they have eaten.
+                      This MVC-designed app is built on Node.js with Express Routing, a MySQL database, a homemade ORM and
+                      the Handlebars.js view engine. </p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -233,9 +276,12 @@
                   <div class="overlay-content">
                     <h3 class="overlayText">Burger</h3>
                     <h6 class="overlayText">Sequelize Edition</h6>
-                    <p class="overlayText">A responsive, full-stack app that allows users to create a list of burgers that they wish to eat and then track when they finally devoured each one. This MVC-designed app is built with Node.js and the Express Framework, a MySQL database with a Sequelize ORM and the Handlebars.js view engine. </p>
-                  </div>  
-                </div>  
+                    <p class="overlayText">A responsive, full-stack app that allows users to create a list of burgers that they wish to eat and
+                      then track when they finally devoured each one. This MVC-designed app is built with Node.js and the
+                      Express Framework, a MySQL database with a Sequelize ORM and the Handlebars.js view engine. Vex Library
+                      for Modal dialogue boxes. </p>
+                  </div>
+                </div>
               </a>
             </div>
 
@@ -247,23 +293,27 @@
                   <div class="overlay-content">
                     <h3 class="overlayText">Javascript Subreddit</h3>
                     <h6 class="overlayText">webscraper</h6>
-                    <p class="overlayText">A Node.js application that scrapes articles from the Javascript subreddit. Users can save articles and then leave comments. Articles and comments are stored in MongoDB via mLab. Uses Mongoose, Handlebars and Cheerio NPM libraries.</p>
-                  </div>  
-                </div>  
+                    <p class="overlayText">A Node.js application that scrapes articles from the Javascript subreddit. Users can save articles and
+                      then leave comments. Articles and comments are stored in MongoDB via mLab. Uses Mongoose, Handlebars
+                      and Cheerio NPM libraries.</p>
+                  </div>
+                </div>
               </a>
             </div>
 
-             <!-- Grocery List -->
-             <div class="col-md-4 col-sm-6 mix category-2">
+            <!-- Grocery List -->
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="https://xd.adobe.com/embed/4753bf32-1b5f-46e7-b992-c454b6d0de0e/?fullscreen" class="website touchAnchor">
                 <img src="assets/images/work-thumb-11.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
                   <div class="overlay-content">
                     <h3 class="overlayText">Grocery List</h3>
                     <h6 class="overlayText"></h6>
-                    <p class="overlayText">Wireframe of app currently in development.  Full-stack MERN app that will generate an aggregate weekly grocery list compiled from a cache of user-selected recipes in accordance with user-specified preferences and dietary restrictions</p>
-                  </div>  
-                </div>  
+                    <p class="overlayText">Wireframe of app currently in development. Full-stack MERN app that will generate an aggregate weekly
+                      grocery list compiled from a cache of user-selected recipes in accordance with user-specified preferences
+                      and dietary restrictions</p>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
@@ -281,19 +331,47 @@
         <div class="about-intro">
           <div class="row">
             <div class="col-md-6 about-intro-text">
-              <p>I am a freshly minted full-stack javascript web developer. I arrived here after reflecting upon the trajectory of my life’s path, having accrued extensive knowledge via various academic institutions, gained perspective and wisdom through diverse career experiences and developed fascinations with numerous technology-rich pastimes. A single theme bubbled to the surface as a result of this introspection: the joy of comprehending the design and operation of technology systems. With a background steeped in information analysis, diagnostic thinking and the detail-oriented operation of technology systems, transitioning my intellectual focus to the realm of programming languages is a natural and timely step forward upon an exciting new path. I'm convinced that a challenging career in software development will be both personally fulfilling and of positive benefit to the world, and this empowers my decision to strive towards mastery of this new skill set.</p>
+              <p>I am a freshly minted full-stack javascript web developer. I arrived here after reflecting upon the trajectory
+                of my life’s path, having accrued extensive knowledge via various academic institutions, gained perspective
+                and wisdom through diverse career experiences and developed fascinations with numerous technology-rich pastimes.
+                A single theme bubbled to the surface as a result of this introspection: the joy of comprehending the design
+                and operation of technology systems. With a background steeped in information analysis, diagnostic thinking
+                and the detail-oriented operation of technology systems, transitioning my intellectual focus to the realm
+                of programming languages is a natural and timely step forward upon an exciting new path. I'm convinced that
+                a challenging career in software development will be both personally fulfilling and of positive benefit to
+                the world, and this empowers my decision to strive towards mastery of this new skill set.</p>
               <section class="link-braces">
                 <p>The delight of this earthly sojourn would be immeasurably diminished were it not for my love, the exceptionally
-                  talented and inspirational<a href="https://www.colortheorycollective.com/" id="alyssaText" target="_blank">Alyssa Lytle</a>.
-                  Daily we put pen to paper, composing a seldom known Craigslist success story.
+                  talented and inspirational
+                  <a href="https://www.colortheorycollective.com/" id="alyssaText" target="_blank">Alyssa Lytle</a>. Daily we put pen to paper, composing a seldom known Craigslist success story.
                 </p>
               </section>
               <ul class="social list-unstyled list-inline text-center">
-                  <li><a href="https://stackoverflow.com/users/7560339/brian-patrick-hummel?tab=profile" target="_blank" class="icn-github"><i class="fa fa-inverse fa-stack-overflow"></i></a></li>
-                  <li><a href="https://github.com/brianpatrickhummel" target="_blank" class="icn-github"><i class="fa fa-github-alt"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/brianpatrickhummel/" target="_blank" class="icn-github"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://www.instagram.com/bribribribribrian/?hl=en" target="_blank" class="icn-github"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="https://earthtonesaudio.bandcamp.com/" target="_blank" class="icn-github"><i class="fa fa-microphone"></i></a></li>
+                <li>
+                  <a href="https://stackoverflow.com/users/7560339/brian-patrick-hummel?tab=profile" target="_blank" class="icn-github">
+                    <i class="fa fa-inverse fa-stack-overflow"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/brianpatrickhummel" target="_blank" class="icn-github">
+                    <i class="fa fa-github-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/brianpatrickhummel/" target="_blank" class="icn-github">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/bribribribribrian/?hl=en" target="_blank" class="icn-github">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://earthtonesaudio.bandcamp.com/" target="_blank" class="icn-github">
+                    <i class="fa fa-microphone"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="col-md-6">
@@ -400,7 +478,9 @@
     </section>
 
     <footer class="cl-effect-2">
-      <a href="https://github.com/brianpatrickhummel" target="_blank" class="touchAnchor"><span data-hover="to Github">© BRIAN PATRICK HUMMEL • 2017</span></a>
+      <a href="https://github.com/brianpatrickhummel" target="_blank" class="touchAnchor">
+        <span data-hover="to Github">© BRIAN PATRICK HUMMEL • 2017</span>
+      </a>
     </footer>
 
   </div>
