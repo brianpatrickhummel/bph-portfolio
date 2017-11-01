@@ -42,6 +42,11 @@
   src: url("../fonts/MavenPro.otf");
 }
 
+@font-face {
+  font-family: "ADAM";
+  src: url("../fonts/ADAM.otf");
+}
+
 section#work h6 {
   font-family: "Sabado";
   letter-spacing: 0.4em;
@@ -134,14 +139,14 @@ section header h2::after {
 }
 
 section header p {
-  color: #505050;
-  font-size: 22px;
+  color: rgba(1, 1, 1, 0.65);
+  font-size: 30px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-weight: 100;
   text-transform: uppercase;
-  font-family: "MavenPro";
+  font-family: "ADAM";
   letter-spacing: 0.05em;
 }
 
@@ -181,6 +186,9 @@ section#contact {
 }
 
 /* social icons */
+.social {
+  margin-top: 40px;
+}
 
 .social a {
   background: #b8b8b8;
@@ -320,7 +328,7 @@ div.parallax-mirror {
 }
 
 .intro-1 p {
-  font-size: 20px;
+  font-size: 28px;
   margin: 20px 0;
   padding: 0 80px;
   letter-spacing: 0.2em;
@@ -599,7 +607,7 @@ li.filter.on {
   font-weight: lighter;
   text-transform: uppercase;
   margin: 10px;
-  letter-spacing: .057em;
+  letter-spacing: 0.057em;
 }
 
 .overlay-content h3 {
@@ -802,7 +810,7 @@ p.pt-per {
 }
 
 .about-intro p {
-  color: rgba(1,1,1,1);
+  color: rgba(1, 1, 1, 1);
   margin-bottom: 25px;
 }
 
@@ -1204,7 +1212,8 @@ p.copyright {
 }
 
 section#about p {
-  font-family: "MavenPro";
+  font-family: "ADAM";
+  color: rgba(1, 1, 1, 0.7);
   font-size: 17px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1354,17 +1363,8 @@ Float Shadow on the Nav Bar Links
   height: 10px;
   width: 90%;
   opacity: 0;
-  background: -webkit-radial-gradient(
-    center,
-    ellipse,
-    rgba(0, 0, 0, 0.25) 0%,
-    transparent 80%
-  );
-  background: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0.25) 0%,
-    transparent 80%
-  );
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, transparent 80%);
   /* W3C */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -1398,7 +1398,7 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
   position: relative;
   z-index: 1;
   /* needed for setting pseudo-element z-index */
-  overflow: hidden;
+  overflow: visible;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1407,8 +1407,7 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
   position: relative;
   display: inline-block;
   outline: none;
-  color: rgba(1, 1, 1, 0.9);
-  vertical-align: bottom;
+  color: rgba(23, 36, 105, 0.5);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1428,7 +1427,7 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
 /* Text scale */
 
 .link-braces a {
-  padding: 0 0.2em 0 0.4em;
+  padding: 0 0.1em 0 0.3em;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -1583,7 +1582,7 @@ footer a:focus {
   .intro-1 h1 {
     font-size: 65px;
   }
-  
+
   section#about p {
     font-size: 14px;
     letter-spacing: 0.06em;
@@ -1600,6 +1599,15 @@ footer a:focus {
 }
 
 @media only screen and (max-width: 992px) {
+  section header p {
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+
+  .social {
+    margin-top: 80px;
+  }
+
   .separator {
     height: 60vh;
   }
@@ -1650,8 +1658,19 @@ footer a:focus {
   }
 
   section#about p {
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: 0.06em;
+    line-height: 26px;
+  }
+
+  .link-braces a::before {
+    left: 0em;
+    top: 0;
+  }
+
+  .link-braces a::after {
+    right: -0.16em;
+    top: 0.01em;
   }
 }
 
@@ -1753,8 +1772,18 @@ footer a:focus {
   }
 
   section#about p {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.06em;
+  }
+
+  .link-braces a::before {
+    left: -0.1em;
+    top: 0.01em;
+  }
+
+  .link-braces a::after {
+    right: -0.2em;
+    top: 0.011em;
   }
 }
 
@@ -1802,6 +1831,21 @@ footer a:focus {
     font-size: 18px;
     letter-spacing: 0.03em;
   }
+
+  section#about p {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  .link-braces a::before {
+    left: -0.1em;
+    top: 0.016em;
+  }
+
+  .link-braces a::after {
+    right: -0.25em;
+    top: 0.015em;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -1827,6 +1871,16 @@ footer a:focus {
   }
   .separator p {
     font-size: 24px;
+  }
+
+  .link-braces a::before {
+    left: -0.1em;
+    top: 0.05em;
+  }
+
+  .link-braces a::after {
+    right: -0.25em;
+    top: 0.05em;
   }
 }
 
@@ -1866,6 +1920,7 @@ footer a:focus {
   section header p {
     font-size: 14px;
     letter-spacing: 0.1em;
+    margin-top: 15px;
   }
   .intro-1 p {
     font-size: 14px;
@@ -1949,5 +2004,20 @@ footer a:focus {
   }
   #contact .form-group {
     margin-bottom: 15px;
+  }
+
+  section#about p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .link-braces a::before {
+    left: -0.1em;
+    top: -0.1em;
+  }
+
+  .link-braces a::after {
+    right: -0.25em;
+    top: -0.1em;
   }
 }
