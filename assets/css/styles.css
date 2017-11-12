@@ -1323,7 +1323,7 @@ section#about p {
 
 .tooltips .tooltiptext {
   visibility: hidden;
-  min-width: 400px;
+  min-width: 410px;
   min-height: 400px;
   width: 100%;
   height: auto;
