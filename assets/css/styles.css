@@ -832,7 +832,6 @@ p.pt-per {
 
 .about-intro p {
   color: rgba(1, 1, 1, 1);
-  margin-bottom: 25px;
 }
 
 
@@ -1307,8 +1306,12 @@ section#about p {
   letter-spacing: 0.1em;
 }
 
+#mainAbout {
+  margin-bottom: 120px;
+}
 
-/* Tooltip container */
+
+/* ====== Tooltip ====== */
 
 .tooltips {
   position: relative;
@@ -1330,7 +1333,7 @@ section#about p {
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  bottom: 50%;
+  bottom: 141%;
   right: -249%;
   margin-left: -60px;
   background: url("../images/ikigai.jpg");
@@ -1345,11 +1348,26 @@ section#about p {
 }
 
 #ikigai {
-  margin-top: 120px;
   font-size: 20px;
   letter-spacing: 0.1em;
   text-indent: 0.05em;
   color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+#ikigai:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+  transition: all 0.5s ease;
+}
+
+.noblur {
+  -webkit-filter: blur(0px);
+  transition: all 1s ease;
 }
 
 
@@ -1867,7 +1885,7 @@ footer a:focus {
     top: 0.011em;
   }
   .tooltips .tooltiptext {
-    right: -310%;
+    right: -325%;
   }
 }
 
@@ -1930,7 +1948,7 @@ footer a:focus {
     font-size: 22px;
   }
   .tooltips .tooltiptext {
-    right: -348%;
+    right: -363%;
   }
 }
 
@@ -2109,7 +2127,7 @@ footer a:focus {
   .tooltips .tooltiptext {
     min-width: 300px;
     min-height: 300px;
-    right: -245%;
+    right: -261%;
   }
 }
 
