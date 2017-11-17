@@ -19,35 +19,12 @@
   <link href="assets/vendor/nivo-slider/themes/default/default.css" rel="stylesheet">
   <link href="assets/css/animate.css" rel="stylesheet">
   <link href="assets/vendor/vanillabox/theme/bitter/vanillabox.css" rel="stylesheet">
-  <link href="assets/vendor/ekko-lightbox.css" rel="stylesheet">
+  <link href="assets/vendor/ekko-lightbox.min.css" rel="stylesheet">
   <!-- Main CSS -->
   <link href="assets/css/styles.css" rel="stylesheet">
   <script src="assets/vendor/modernizr.custom.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108140954-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108140954-1');
-  </script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108140954-1');
-  </script>
 </head>
 
 <body>
@@ -149,16 +126,14 @@
           <li class="filter" data-filter="all">all</li>
           <li class="filter" data-filter=".category-1">Node CLI</li>
           <li class="filter" data-filter=".category-2">Web</li>
-          <li class="filter" data-filter=".category-3">Bootcamp</li>
-          <li class="filter" data-filter=".category-4">Post-Bootcamp</li>
-          <!-- <li class="filter" data-filter=".category-3">video</li> -->
+          <li class="filter" data-filter=".category-3">Post-Bootcamp</li>
         </ul>
 
         <div id="work-container" class="work-gallery">
           <div class="row">
 
             <!-- HANGMAN -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="https://brianpatrickhummel.github.io/Hangman-Game/" class="website">
                 <img src="assets/images/work-thumb-7.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -171,7 +146,7 @@
             </div>
 
             <!-- TRIVIA GAME -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="https://brianpatrickhummel.github.io/TriviaGame/" class="website touchAnchor">
                 <img src="assets/images/work-thumb-6.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -186,7 +161,7 @@
             </div>
 
             <!-- TRAIN SCHEDULER -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="https://brianpatrickhummel.github.io/trainscheduler/" class="website touchAnchor" onclick="">
                 <img src="assets/images/work-thumb-8.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -243,7 +218,7 @@
             </div>
 
             <!-- FRIEND FINDER -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="http://www.friend-finder.brianpatrickhummel.com" class="website touchAnchor">
                 <img src="assets/images/work-thumb-4.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -257,7 +232,7 @@
             </div>
 
             <!-- MySQL Burger-->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="http://www.burger.brianpatrickhummel.com" class="website touchAnchor">
                 <img src="assets/images/work-thumb-5.jpg" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -273,7 +248,7 @@
             </div>
 
             <!-- Sequelize Burger-->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="http://www.sequelizedburger.brianpatrickhummel.com" class="website touchAnchor">
                 <img src="assets/images/work-thumb-9.jpg" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -290,7 +265,7 @@
             </div>
 
             <!-- Reddit Scraper -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-3">
+            <div class="col-md-4 col-sm-6 mix category-2">
               <a href="http://www.reddit-webscraper.brianpatrickhummel.com" class="website touchAnchor">
                 <img src="assets/images/work-thumb-10.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -306,7 +281,7 @@
             </div>
 
             <!-- Emailer -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-4">
+            <div class="col-md-4 col-sm-6 mix category-2 category-3">
               <a href="https://limitless-everglades-47038.herokuapp.com/" class="website touchAnchor">
                 <img src="assets/images/work-thumb-12.jpg" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -322,7 +297,7 @@
             </div>
 
             <!-- Grocery List -->
-            <div class="col-md-4 col-sm-6 mix category-2 category-4">
+            <div class="col-md-4 col-sm-6 mix category-2 category-3">
               <a href="https://xd.adobe.com/embed/4753bf32-1b5f-46e7-b992-c454b6d0de0e/?fullscreen" class="website touchAnchor">
                 <img src="assets/images/work-thumb-11.png" class="work-thumb img-responsive" alt="" />
                 <div class="overlay">
@@ -520,14 +495,38 @@
   <script src="assets/vendor/jquery.fixedcontent.min.js"></script>
   <script src="assets/vendor/jquery.vide.min.js"></script>
   <script src="assets/vendor/jquery.mixitup.min.js"></script>
-  <script src="assets/vendor/vanillabox/jquery.vanillabox.js"></script>
+  <script src="assets/vendor/vanillabox/jquery.vanillabox-0.1.7.min.js"></script>
   <script src="assets/vendor/match-height/jquery.matchHeight-min.js"></script>
   <script src="assets/contact-form/js/validator.min.js"></script>
   <script src="assets/contact-form/js/form-scripts.js"></script>
   <script src="assets/js/scrn.js"></script>
   <script src="assets/vendor/nivo-slider/jquery.nivo.slider.pack.js"></script>
   <script src="assets/js/scrn.js"></script>
-  <script src="assets/vendor/ekko-lightbox.js"></script>
+  <script src="assets/vendor/ekko-lightbox.min.js"></script>
+
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-108140954-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108140954-1');
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108140954-1');
+  </script>
+
 
   <script>
     $(window).load(function () {

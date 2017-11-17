@@ -1950,6 +1950,9 @@ footer a:focus {
   .tooltips .tooltiptext {
     right: -363%;
   }
+  li.filter {
+    padding: 16px;
+  }
 }
 
 @media only screen and (max-width: 510px) {
