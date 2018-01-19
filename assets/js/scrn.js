@@ -1,31 +1,30 @@
-'use strict';
-$(document).ready(function(){
-
-
+"use strict";
+$(document).ready(function() {
   // animsition
   $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
+    inClass: "fade-in",
+    outClass: "fade-out",
     inDuration: 1500,
     outDuration: 800,
-    linkElement: '.animsition-link',
+    linkElement: ".animsition-link",
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
+    loadingParentElement: "body", //animsition wrapper element
+    loadingClass: "animsition-loading",
+    loadingInner: "", // e.g '<img src="loading.svg" />'
     timeout: false,
     timeoutCountdown: 5000,
     onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    browser: ["animation-duration", "-webkit-animation-duration"],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
+    overlay: false,
+    overlayClass: "animsition-overlay-slide",
+    overlayParentElement: "body",
+    transition: function(url) {
+      window.location.href = url;
+    }
   });
-
 
   // vanillabox
   // $('a.image').vanillabox();
@@ -34,65 +33,55 @@ $(document).ready(function(){
   //   type: 'iframe'
   // });
 
-  $('a.youtube').vanillabox({
-    type: 'iframe',
-    grouping:false,
+  $("a.youtube").vanillabox({
+    type: "iframe",
+    grouping: false,
     preferredWidth: 1400,
     preferredHeight: 1300
-
   });
 
-  $('a.website').vanillabox({
-    type: 'iframe',
-    grouping:false,
+  $("a.website").vanillabox({
+    type: "iframe",
+    grouping: false,
     preferredWidth: 1100,
     preferredHeight: 1100
   });
 
-
   // smooth scroll
-	$('html').smoothScroll();
-
+  $("html").smoothScroll();
 
   // matchHeight
-  $('.match-height').matchHeight();
-
+  $(".match-height").matchHeight();
 
   // Fix parallax div height change
-  $('.filter-list > li').on('click', function(){
-      setTimeout(function() { 
-	      $(window).trigger('resize');
-      }, 800);
-			
-    });
-
+  $(".filter-list > li").on("click", function() {
+    setTimeout(function() {
+      $(window).trigger("resize");
+    }, 800);
+  });
 }); // end (document).ready(function()
 
-
-
 // parallax
-jQuery(window).trigger('resize').trigger('scroll');
+jQuery(window)
+  .trigger("resize")
+  .trigger("scroll");
 
-window.setTimeout(function(){
-    $(window).resize();
-},500);
-
-
+window.setTimeout(function() {
+  $(window).resize();
+}, 500);
 
 // mixItUp
-$('#work-container').mixItUp({
+$("#work-container").mixItUp({
   controls: {
-    activeClass: 'on'
+    activeClass: "on"
   }
 });
-
 
 // fade out intro on scroll
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  $('.intro-content').css({'opacity':(( 1000-scroll )/1000)});
+  $(".intro-content").css({ opacity: (1000 - scroll) / 1000 });
 });
-
 
 // sticky nav
 $(".js_fixedcontent").fixedcontent({
@@ -101,10 +90,9 @@ $(".js_fixedcontent").fixedcontent({
   zIndex: 500
 });
 
-
 // close collapsed bootstrap nav
-$(document).on('click','.navbar-collapse.in',function(e) {
-  if( $(e.target).is('a') ) {
-    $(this).collapse('hide');
+$(document).on("click", ".navbar-collapse.in", function(e) {
+  if ($(e.target).is("a")) {
+    $(this).collapse("hide");
   }
 });
