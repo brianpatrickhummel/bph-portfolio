@@ -84,7 +84,8 @@
   height: 150px;
   width: 200px;
 }
-.vnbx-loading > img, .vnbx-loading > iframe,
+.vnbx-loading > img,
+.vnbx-loading > iframe,
 .vnbx-error > img,
 .vnbx-error > iframe {
   display: none;
@@ -230,14 +231,14 @@
 }
 
 .vnbx-loading {
-  background-image: url(../sweet/img/loading.gif);
+  background-image: url(../../../../images/preloader.gif);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 32px;
+  background-size: 200px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-loading {
-    background-image: url(../sweet/img/loading@2x.gif);
+    background-image: url(../../../../images/preloader.gif);
   }
 }
 

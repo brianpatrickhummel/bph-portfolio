@@ -84,7 +84,8 @@
   height: 150px;
   width: 200px;
 }
-.vnbx-loading > img, .vnbx-loading > iframe,
+.vnbx-loading > img,
+.vnbx-loading > iframe,
 .vnbx-error > img,
 .vnbx-error > iframe {
   display: none;
