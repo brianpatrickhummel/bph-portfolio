@@ -330,7 +330,7 @@ div.parallax-mirror {
 }
 
 .intro-1 p {
-  font-size: 28px;
+  font-size: 18px;
   margin: 20px 0;
   padding: 0 80px;
   letter-spacing: 0.2em;
@@ -1736,6 +1736,11 @@ footer a:focus {
   .tooltips .tooltiptext {
     right: -290%;
   }
+
+  .intro-1 p {
+    font-size: 16px;
+    padding: 0 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1753,11 +1758,10 @@ footer a:focus {
     font-size: 100px;
   }
   .intro-1 p {
-    font-size: 19px;
-  }
-  .intro-1 p {
+    font-size: 14px;
     padding: 0;
   }
+
   .intro-2 h1 span {
     font-size: 100px;
   }
@@ -1858,7 +1862,8 @@ footer a:focus {
     font-size: 90px;
   }
   .intro-1 p {
-    font-size: 18px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
   }
   .intro-2 h1 span {
     font-size: 80px;
@@ -1969,7 +1974,7 @@ footer a:focus {
   .intro-1 h1 {
     font-size: 32px;
     margin-top: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 0.05em;
   }
   .parallax p {
@@ -1990,7 +1995,8 @@ footer a:focus {
     margin-top: 15px;
   }
   .intro-1 p {
-    font-size: 20px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
   }
   h2 {
     font-size: 30px;
@@ -2036,13 +2042,13 @@ footer a:focus {
     height: 91vh;
   }
   .intro-1 p {
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bolder;
     margin-bottom: 50px;
   }
   .intro-1 h1 {
-    font-size: 24px;
-    letter-spacing: 0em;
+    font-size: 26px;
+    letter-spacing: 0.1em;
   }
   .nivo-caption {
     text-align: center;
