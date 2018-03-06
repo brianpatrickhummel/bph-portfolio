@@ -141,7 +141,7 @@ section header h2::after {
 
 section header p {
   color: rgba(1, 1, 1, 0.65);
-  font-size: 30px;
+  font-size: 24px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -483,7 +483,7 @@ a.icn-github {
   text-align: center;
 }
 
-.nav > li > a {
+.nav>li>a {
   color: #2c2c2c;
   font-size: 13px;
   font-weight: 600;
@@ -1388,8 +1388,8 @@ section#about p {
   letter-spacing: 0.1em;
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
+.nav>li>a:focus,
+.nav>li>a:hover {
   text-decoration: none;
   background-color: rgba(1, 1, 1, 0);
 }
@@ -1626,7 +1626,7 @@ footer a:focus {
 ******************************/
 
 @media only screen and (max-width: 1200px) {
-  .nav > li > a {
+  .nav>li>a {
     padding: 15px 30px;
   }
   .single-project-info li {
@@ -1736,7 +1736,6 @@ footer a:focus {
   .tooltips .tooltiptext {
     right: -290%;
   }
-
   .intro-1 p {
     font-size: 16px;
     padding: 0 40px;
@@ -1761,7 +1760,6 @@ footer a:focus {
     font-size: 14px;
     padding: 0;
   }
-
   .intro-2 h1 span {
     font-size: 100px;
   }
