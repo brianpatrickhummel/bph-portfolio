@@ -481,7 +481,8 @@
           </li>
         </ul> -->
             <form role="form" id="contactForm" data-toggle="validator" class="shake">
-
+              <!-- the &nbsp; makes the empty consume the space the message will eventually take -->
+              <div id="msgSubmit" class="h3">&nbsp;</div>
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter name" required>
@@ -501,7 +502,7 @@
               </div>
 
               <button type="submit" id="form-submit" class="btn btn-default btn-white">Submit</button>
-              <div id="msgSubmit" class="h3 text-center hidden"></div>
+
               <div class="clearfix"></div>
             </form>
           </div>

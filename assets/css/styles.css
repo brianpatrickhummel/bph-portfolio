@@ -86,7 +86,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   text-indent: 0.15em;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 h3 {
@@ -1095,16 +1095,12 @@ a.comment-reply-link {
   color: #fff;
 }
 
-#contact header {
-  margin-bottom: 50px;
-}
-
 #contact header h2::after {
   background-color: #fff;
 }
 
 #contact form {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 #contact label {
@@ -1161,6 +1157,10 @@ a.comment-reply-link {
 
 .contact-info .content {
   margin: auto auto;
+}
+
+#msgSubmit {
+  justify-content: center;
 }
 
 /***** map *****/
