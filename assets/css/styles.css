@@ -157,7 +157,7 @@ section#services,
 section#about,
 section#blog,
 section#contact {
-  padding: 130px 0 140px 0;
+  padding: 100px 0 140px 0;
 }
 
 /* call to action */
@@ -477,13 +477,18 @@ a.icn-github {
   margin: 0;
   position: relative;
   z-index: 1000;
+  text-align: center;
 }
 
 .navbar .navbar-collapse {
   text-align: center;
 }
 
-.nav>li>a {
+.navbar-nav > li {
+  display: inline-block;
+}
+
+.nav > li > a {
   color: #2c2c2c;
   font-size: 13px;
   font-weight: 600;
@@ -501,9 +506,6 @@ a.icn-github {
     display: inline-block;
     float: none;
     vertical-align: top;
-  }
-  .navbar .navbar-collapse {
-    text-align: center;
   }
 }
 
@@ -1388,8 +1390,8 @@ section#about p {
   letter-spacing: 0.1em;
 }
 
-.nav>li>a:focus,
-.nav>li>a:hover {
+.nav > li > a:focus,
+.nav > li > a:hover {
   text-decoration: none;
   background-color: rgba(1, 1, 1, 0);
 }
@@ -1397,59 +1399,6 @@ section#about p {
 footer a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 22px;
-}
-
-/******************************
-Float Shadow on the Nav Bar Links
-******************************/
-
-.hvr-float-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-.hvr-float-shadow:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: "";
-  top: 70%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, transparent 80%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, transparent 80%);
-  /* W3C */
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform, opacity;
-  transition-property: transform, opacity;
-}
-
-.hvr-float-shadow:hover,
-.hvr-float-shadow:focus,
-.hvr-float-shadow:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  /* move the element up by 5px */
-}
-
-.hvr-float-shadow:hover:before,
-.hvr-float-shadow:focus:before,
-.hvr-float-shadow:active:before {
-  opacity: 1;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 /******************************
@@ -1485,6 +1434,25 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-font-smoothing: anti-aliased;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Text scale */
@@ -1626,7 +1594,7 @@ footer a:focus {
 ******************************/
 
 @media only screen and (max-width: 1200px) {
-  .nav>li>a {
+  .nav > li > a {
     padding: 15px 30px;
   }
   .single-project-info li {
@@ -1835,6 +1803,7 @@ footer a:focus {
   section#contact {
     padding: 100px 0 105px 0;
   }
+
   section#about p {
     font-size: 14px;
     letter-spacing: 0.06em;
@@ -1953,7 +1922,7 @@ footer a:focus {
   }
 } */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .separator p {
     font-size: 16px;
   }
@@ -2003,9 +1972,15 @@ footer a:focus {
   #contact header {
     margin-bottom: 20px;
   }
-  section#work {
+
+  section#work,
+  section#services,
+  section#about,
+  section#blog,
+  section#contact {
     padding: 65px 0 65px 0;
   }
+
   li.filter {
     font-size: 11px;
     font-weight: 600;
@@ -2032,6 +2007,10 @@ footer a:focus {
   section#work h6 {
     letter-spacing: 0.2em;
     font-size: 10px;
+  }
+
+  .nav > li > a {
+    padding: 15px 20px;
   }
 }
 
@@ -2066,8 +2045,9 @@ footer a:focus {
   section#work,
   section#about,
   section#contact {
-    padding: 30px 0 30px 0;
+    padding: 60px 0 30px 0;
   }
+
   section#about header {
     margin-bottom: 15px;
   }
@@ -2096,6 +2076,9 @@ footer a:focus {
     min-width: 300px;
     min-height: 300px;
     right: -261%;
+  }
+  .nav > li > a {
+    padding: 10px 15px;
   }
 }
 
