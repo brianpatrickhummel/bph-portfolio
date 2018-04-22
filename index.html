@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -22,10 +22,33 @@
   <link href="assets/vendor/ekko-lightbox.min.css" rel="stylesheet">
   <!-- Main CSS -->
   <link href="assets/css/styles.css" rel="stylesheet">
-  <script src="assets/vendor/modernizr.custom.js"></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KFD8V9Q');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFD8V9Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="animsition">
 
     <section id="intro" class="intro-1 parallax-window" data-parallax="scroll" data-image-src="assets/images/intro-bg.jpg">
@@ -98,10 +121,15 @@
           <br>
 
 
-          <h6>View my progress on current project by visiting
-            <a href="https://github.com/brianpatrickhummel/thegrocerylist" target="about_blank">Github</a> and
-            <a href="https://youtu.be/V8Gq8ildlVs" target="about_blank">Youtube</a>
+          <h6>View my current project's codebase on
+            <a href="https://github.com/brianpatrickhummel/thegrocerylist" target="about_blank">Github</a>
           </h6>
+          <h6>
+            Watch progress demo videos on
+            <a href="https://www.youtube.com/playlist?list=PL0Kv5YQtOkv90DfqwIIOSadJtEtHTy57W" target="about_blank">
+              YouTube </a>
+          </h6>
+          <br>
           <br>
           <p>Most of the applications below were weekly exercises built while attending the UT Coding Bootcamp.
             Arranged from my most recent projects to the earliest experiments, this chronology illustrates
@@ -512,6 +540,7 @@
 
   </div>
   <!-- /.animsition -->
+  <script src="assets/vendor/modernizr.custom.js"></script>
   <script src="assets/js/jquery-2.2.4.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/vendor/animsition/js/animsition.min.js"></script>
@@ -528,29 +557,17 @@
   <script src="assets/vendor/nivo-slider/jquery.nivo.slider.pack.js"></script>
   <script src="assets/js/scrn.js"></script>
   <script src="assets/vendor/ekko-lightbox.min.js"></script>
+  <!-- <script async>
+    (function (s, u, m, o, j, v) {
+      j = u.createElement(m);
+      v = u.getElementsByTagName(m)[0];
+      j.async = 1;
+      j.src = o;
+      j.dataset.sumoSiteId = 'c8e215249a8fce9a8dadc79224240262344e513f4d7bba77ccb701e0b660928f';
+      v.parentNode.insertBefore(j, v)
+    })(window, document, 'script', '//load.sumo.com/');
+  </script> -->
 
-  <script src="https://www.googletagmanager.com/gtag/js?id=UA-108140954-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108140954-1');
-  </script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108140954-1');
-  </script>
 
 
   <script>
