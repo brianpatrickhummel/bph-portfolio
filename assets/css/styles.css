@@ -484,11 +484,11 @@ a.icn-github {
   text-align: center;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
   display: inline-block;
 }
 
-.nav > li > a {
+.nav>li>a {
   color: #2c2c2c;
   font-size: 13px;
   font-weight: 600;
@@ -1264,6 +1264,17 @@ section#about p {
   14. Brian Custom
 ******************************/
 
+.container header {
+  text-align: center;
+}
+
+#currentProject {
+  display: inline-block;
+  width: 80%;
+  border: solid black 1px;
+  margin-bottom: 40px;
+}
+
 .caption {
   text-align: center;
   text-transform: uppercase;
@@ -1390,8 +1401,8 @@ section#about p {
   letter-spacing: 0.1em;
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
+.nav>li>a:focus,
+.nav>li>a:hover {
   text-decoration: none;
   background-color: rgba(1, 1, 1, 0);
 }
@@ -1437,6 +1448,7 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
 }
 
 /* Grow */
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -1448,6 +1460,7 @@ https://tympanus.net/codrops/2014/06/04/inspiration-for-inline-anchor-styles/
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
@@ -1594,7 +1607,7 @@ footer a:focus {
 ******************************/
 
 @media only screen and (max-width: 1200px) {
-  .nav > li > a {
+  .nav>li>a {
     padding: 15px 30px;
   }
   .single-project-info li {
@@ -1803,7 +1816,6 @@ footer a:focus {
   section#contact {
     padding: 100px 0 105px 0;
   }
-
   section#about p {
     font-size: 14px;
     letter-spacing: 0.06em;
@@ -1972,7 +1984,6 @@ footer a:focus {
   #contact header {
     margin-bottom: 20px;
   }
-
   section#work,
   section#services,
   section#about,
@@ -1980,7 +1991,6 @@ footer a:focus {
   section#contact {
     padding: 65px 0 65px 0;
   }
-
   li.filter {
     font-size: 11px;
     font-weight: 600;
@@ -2008,8 +2018,7 @@ footer a:focus {
     letter-spacing: 0.2em;
     font-size: 10px;
   }
-
-  .nav > li > a {
+  .nav>li>a {
     padding: 15px 20px;
   }
 }
@@ -2047,7 +2056,6 @@ footer a:focus {
   section#contact {
     padding: 60px 0 30px 0;
   }
-
   section#about header {
     margin-bottom: 15px;
   }
@@ -2077,7 +2085,7 @@ footer a:focus {
     min-height: 300px;
     right: -261%;
   }
-  .nav > li > a {
+  .nav>li>a {
     padding: 10px 15px;
   }
 }
