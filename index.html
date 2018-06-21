@@ -23,7 +23,7 @@
   <!-- Main CSS -->
   <link href="assets/css/styles.css" rel="stylesheet">
   <!-- Google Tag Manager -->
-  <script>
+  <script>   
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -37,9 +37,8 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KFD8V9Q');
-  </script>
-  <!-- End Google Tag Manager -->
+    })(window, document, 'script', 'dataLayer', 'GTM-KFD8V9Q');</script>
+
 </head>
 
 <body>
@@ -122,13 +121,17 @@
 
 
           <div id="currentProject">
-            <h6>View my current project's codebase on
+            <h6>View my current project's codebase on:
               <a href="https://github.com/brianpatrickhummel/thegrocerylist" target="about_blank">Github</a>
             </h6>
             <h6>
-              Watch progress demo videos on
+              Watch progress demo videos on:
               <a href="https://www.youtube.com/playlist?list=PL0Kv5YQtOkv90DfqwIIOSadJtEtHTy57W" target="about_blank">
                 YouTube </a>
+            </h6>
+            <h6>
+              Production Deployment On:
+              <a href="http://thegrocerylist.herokuapp.com/"> Heroku</a>
             </h6>
           </div>
           <br>
@@ -572,7 +575,7 @@
 
     // script to make the Bio Image hover effect compatible with Touch Devices
     $(function () {
-      $('.touchAnchor').bind('touchstart', function (e) {});
+      $('.touchAnchor').bind('touchstart', function (e) { });
     });
   </script>
 
