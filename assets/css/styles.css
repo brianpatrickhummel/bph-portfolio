@@ -1609,6 +1609,11 @@ footer a:focus {
 /******************************
  15. Media queries
 ******************************/
+@media only screen and (max-width: 2000px) {
+  .intro-1 h1 {
+    margin-top: 335px;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .nav > li > a {
