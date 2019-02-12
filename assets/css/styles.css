@@ -68,7 +68,7 @@ h5 {
 
 .intro-1 h1 {
   font-size: 70px;
-  margin-top: 250px;
+  margin-top: 170px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-indent: 0.3em;
@@ -331,7 +331,7 @@ div.parallax-mirror {
 
 .intro-1 p {
   font-size: 18px;
-  margin: 20px 0;
+  margin: 0;
   padding: 0 80px;
   letter-spacing: 0.2em;
   text-indent: 0.15em;
@@ -484,11 +484,11 @@ a.icn-github {
   text-align: center;
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
   display: inline-block;
 }
 
-.nav>li>a {
+.nav > li > a {
   color: #2c2c2c;
   font-size: 13px;
   font-weight: 600;
@@ -1263,6 +1263,10 @@ section#about p {
 /******************************
   14. Brian Custom
 ******************************/
+.BPHLogo {
+  width: auto;
+  height: 70px;
+}
 
 .container header {
   text-align: center;
@@ -1401,8 +1405,8 @@ section#about p {
   letter-spacing: 0.1em;
 }
 
-.nav>li>a:focus,
-.nav>li>a:hover {
+.nav > li > a:focus,
+.nav > li > a:hover {
   text-decoration: none;
   background-color: rgba(1, 1, 1, 0);
 }
@@ -1607,7 +1611,7 @@ footer a:focus {
 ******************************/
 
 @media only screen and (max-width: 1200px) {
-  .nav>li>a {
+  .nav > li > a {
     padding: 15px 30px;
   }
   .single-project-info li {
@@ -1939,7 +1943,7 @@ footer a:focus {
     font-size: 16px;
   }
   ul.social-intro {
-    margin-top: 400px;
+    margin-top: 90px;
   }
   .intro-1 .intro-content {
     padding-top: 10px;
@@ -1952,7 +1956,7 @@ footer a:focus {
   }
   .intro-1 h1 {
     font-size: 32px;
-    margin-top: 45px;
+    margin-top: 25px;
     margin-bottom: 10px;
     letter-spacing: 0.05em;
   }
@@ -2018,7 +2022,7 @@ footer a:focus {
     letter-spacing: 0.2em;
     font-size: 10px;
   }
-  .nav>li>a {
+  .nav > li > a {
     padding: 15px 20px;
   }
 }
@@ -2030,9 +2034,9 @@ footer a:focus {
   .intro-1 p {
     font-size: 10px;
     font-weight: bolder;
-    margin-bottom: 50px;
   }
   .intro-1 h1 {
+    margin-top: 24px;
     font-size: 26px;
     letter-spacing: 0.1em;
   }
@@ -2078,14 +2082,14 @@ footer a:focus {
     top: -0.1em;
   }
   ul.social-intro {
-    margin-top: 350px;
+    margin-top: 40px;
   }
   .tooltips .tooltiptext {
     min-width: 300px;
     min-height: 300px;
     right: -261%;
   }
-  .nav>li>a {
+  .nav > li > a {
     padding: 10px 15px;
   }
 }
@@ -2094,8 +2098,13 @@ footer a:focus {
   .intro-1 h1 {
     font-size: 24px;
     letter-spacing: 0.1em;
+    margin-top: 7px;
   }
   ul.social-intro {
-    margin-top: 280px;
+    margin-top: 30px;
+  }
+
+  .nav > li > a {
+    font-size: 10px;
   }
 }
